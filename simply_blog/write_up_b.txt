@@ -1,0 +1,4 @@
+* In my simply blogging website,the user able to post the article and also users able to views the aricle in my home page.
+* Initially My Blogging Page is Empty, click on Post_Article Button,then new post article tab is opening, in that user able to write and 
+  post the article,then come in main page and click the Refresh button to view updated posts.
+* I created the login,register and inforamtion page about the main page so these are all just static pages

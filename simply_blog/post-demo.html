@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    
+</head>
+<style>
+    html,body{
+        background-image: url("p6.png");
+        width: 100%;
+        height:100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+         
+
+    }
+</style>
+
+<body>
+    
+    <div class="container">
+        <h2>
+            Post Your Article
+        </h2>
+      </div>
+  
+
+    <div class="container">
+               
+        <form id="form_id">
+          <div class="form-group" >
+              <label for="title"><b>Title</b></label>
+              <input type="text" class="form-control" id="Article" placeholder="Article name">
+            </div>
+            <div class="form-group">
+                <label for="author"><b>Author</b></label>
+                <input type="text" class="form-control" id="Author" placeholder="Author name" >
+              </div>
+            <div class="form-group">
+              <label for="comment"><b>Description</b></label>
+              <textarea class="form-control" rows="10" id="text1" placeholder="Content" ></textarea >
+            </div>
+            
+            <button type="submit" id="sub" class="btn btn-primary">Submit</button>
+            
+            
+        </form>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('sub')
+        .addEventListener('click',add)
+        const myform = document.getElementById("form_id")
+        myform.addEventListener("submit",(e)=>{e.preventDefault();});
+    </script>
+    
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
